@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "196981D3-0667-41F3-B395-0F35B1D82F4D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:DSXCUITestApp.xcodeproj",
+      "identifier" : "TT1111111111111111111111",
+      "name" : "DSXCUITestApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:DSXCUITestApp.xcodeproj",
+        "identifier" : "TT2222222222222222222222",
+        "name" : "DSXCUITestAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

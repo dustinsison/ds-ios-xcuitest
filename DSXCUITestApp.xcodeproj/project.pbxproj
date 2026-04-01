@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,13 @@
 		BB5555555555555555555555 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5555555555555555555555 /* SettingsView.swift */; };
 		BB6666666666666666666666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6666666666666666666666 /* Assets.xcassets */; };
 		BB7777777777777777777777 /* DSXCUITestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7777777777777777777777 /* DSXCUITestAppUITests.swift */; };
+		F92E33712F7DAC1B00BE8D17 /* BaseUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92E33702F7DAC1500BE8D17 /* BaseUITest.swift */; };
+		F92E33732F7DAC3100BE8D17 /* XCUIApplication+Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92E33722F7DAC2500BE8D17 /* XCUIApplication+Launch.swift */; };
+		F92E337E2F7DAC6200BE8D17 /* XCUIElement+Typing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92E337D2F7DAC5300BE8D17 /* XCUIElement+Typing.swift */; };
+		F92E33802F7DAC6E00BE8D17 /* TestUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92E337F2F7DAC6A00BE8D17 /* TestUsers.swift */; };
+		F92E33822F7DAD2500BE8D17 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92E33812F7DAD2100BE8D17 /* LoginTests.swift */; };
+		F92E33842F7DAD2E00BE8D17 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92E33832F7DAD2B00BE8D17 /* HomeTests.swift */; };
+		F92E33862F7DAD3500BE8D17 /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92E33852F7DAD3200BE8D17 /* SettingsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,21 @@
 		AA5555555555555555555555 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AA6666666666666666666666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA7777777777777777777777 /* DSXCUITestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSXCUITestAppUITests.swift; sourceTree = "<group>"; };
+		F92E33702F7DAC1500BE8D17 /* BaseUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITest.swift; sourceTree = "<group>"; };
+		F92E33722F7DAC2500BE8D17 /* XCUIApplication+Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Launch.swift"; sourceTree = "<group>"; };
+		F92E337D2F7DAC5300BE8D17 /* XCUIElement+Typing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Typing.swift"; sourceTree = "<group>"; };
+		F92E337F2F7DAC6A00BE8D17 /* TestUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUsers.swift; sourceTree = "<group>"; };
+		F92E33812F7DAD2100BE8D17 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		F92E33832F7DAD2B00BE8D17 /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
+		F92E33852F7DAD3200BE8D17 /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
+		F92E33872F7DAEEE00BE8D17 /* DSXCUITestApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DSXCUITestApp.xctestplan; sourceTree = "<group>"; };
 		RR1111111111111111111111 /* DSXCUITestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSXCUITestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		RR2222222222222222222222 /* DSXCUITestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSXCUITestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F92E336C2F7CFD8D00BE8D17 /* Pages */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Pages; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		PP3333333333333333333333 /* Frameworks */ = {
@@ -56,9 +75,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F92E33682F7CFD6E00BE8D17 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA1111111111111111111111 /* DSXCUITestApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F92E33692F7CFD7500BE8D17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA2222222222222222222222 /* AppState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F92E336A2F7CFD7C00BE8D17 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AA4444444444444444444444 /* HomeView.swift */,
+				AA3333333333333333333333 /* LoginView.swift */,
+				AA5555555555555555555555 /* SettingsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F92E336B2F7CFD8600BE8D17 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F92E33722F7DAC2500BE8D17 /* XCUIApplication+Launch.swift */,
+				F92E33702F7DAC1500BE8D17 /* BaseUITest.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F92E336D2F7CFD9E00BE8D17 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F92E337D2F7DAC5300BE8D17 /* XCUIElement+Typing.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F92E336E2F7CFDA600BE8D17 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				F92E337F2F7DAC6A00BE8D17 /* TestUsers.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		F92E336F2F7CFDAC00BE8D17 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F92E33852F7DAD3200BE8D17 /* SettingsTests.swift */,
+				F92E33832F7DAD2B00BE8D17 /* HomeTests.swift */,
+				F92E33812F7DAD2100BE8D17 /* LoginTests.swift */,
+				AA7777777777777777777777 /* DSXCUITestAppUITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		GG1111111111111111111111 = {
 			isa = PBXGroup;
 			children = (
+				F92E33872F7DAEEE00BE8D17 /* DSXCUITestApp.xctestplan */,
 				GG2222222222222222222222 /* DSXCUITestApp */,
 				GG3333333333333333333333 /* DSXCUITestAppUITests */,
 				GG4444444444444444444444 /* Products */,
@@ -68,11 +150,9 @@
 		GG2222222222222222222222 /* DSXCUITestApp */ = {
 			isa = PBXGroup;
 			children = (
-				AA1111111111111111111111 /* DSXCUITestApp.swift */,
-				AA2222222222222222222222 /* AppState.swift */,
-				AA3333333333333333333333 /* LoginView.swift */,
-				AA4444444444444444444444 /* HomeView.swift */,
-				AA5555555555555555555555 /* SettingsView.swift */,
+				F92E33682F7CFD6E00BE8D17 /* App */,
+				F92E33692F7CFD7500BE8D17 /* Models */,
+				F92E336A2F7CFD7C00BE8D17 /* Screens */,
 				AA6666666666666666666666 /* Assets.xcassets */,
 			);
 			path = DSXCUITestApp;
@@ -81,7 +161,11 @@
 		GG3333333333333333333333 /* DSXCUITestAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AA7777777777777777777777 /* DSXCUITestAppUITests.swift */,
+				F92E336F2F7CFDAC00BE8D17 /* Tests */,
+				F92E336E2F7CFDA600BE8D17 /* Fixtures */,
+				F92E336D2F7CFD9E00BE8D17 /* Helpers */,
+				F92E336C2F7CFD8D00BE8D17 /* Pages */,
+				F92E336B2F7CFD8600BE8D17 /* Base */,
 			);
 			path = DSXCUITestAppUITests;
 			sourceTree = "<group>";
@@ -128,6 +212,9 @@
 			dependencies = (
 				DD1111111111111111111111 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				F92E336C2F7CFD8D00BE8D17 /* Pages */,
+			);
 			name = DSXCUITestAppUITests;
 			productName = DSXCUITestAppUITests;
 			productReference = RR2222222222222222222222 /* DSXCUITestAppUITests.xctest */;
@@ -141,7 +228,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					TT1111111111111111111111 = {
 						CreatedOnToolsVersion = 15.0;
@@ -206,6 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92E33842F7DAD2E00BE8D17 /* HomeTests.swift in Sources */,
+				F92E33862F7DAD3500BE8D17 /* SettingsTests.swift in Sources */,
+				F92E337E2F7DAC6200BE8D17 /* XCUIElement+Typing.swift in Sources */,
+				F92E33822F7DAD2500BE8D17 /* LoginTests.swift in Sources */,
+				F92E33732F7DAC3100BE8D17 /* XCUIApplication+Launch.swift in Sources */,
+				F92E33802F7DAC6E00BE8D17 /* TestUsers.swift in Sources */,
+				F92E33712F7DAC1B00BE8D17 /* BaseUITest.swift in Sources */,
 				BB7777777777777777777777 /* DSXCUITestAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +372,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -332,6 +427,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -344,6 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 9YQV93C6WC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -373,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 9YQV93C6WC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -459,7 +557,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
 	};
 	rootObject = JJ1111111111111111111111 /* Project object */;
 }
