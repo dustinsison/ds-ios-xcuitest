@@ -141,7 +141,7 @@ This reflects a broader principle:
 
 ---
 
-## 🔍 Accessibility Strategy
+## Accessibility Strategy
 
 All interactive elements use consistent identifiers following:
 
@@ -162,7 +162,7 @@ Additionally, some elements expose **accessibility values** (e.g., `"On"` / `"Of
 
 ---
 
-## 🚀 Running Tests
+## Running Tests
 
 1. Open `DSXCUITestApp.xcodeproj` in Xcode
 2. Select a simulator (e.g., iPhone 15)
@@ -174,7 +174,7 @@ Cmd + U
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 * Xcode 15+
 * iOS 17+
@@ -182,17 +182,7 @@ Cmd + U
 
 ---
 
-## 💡 Key Takeaways
-
-* UI automation benefits from **intentional architecture**
-* Page Object patterns improve maintainability and clarity
-* UI tests should **verify state**, not assume interactions succeed
-* Designing UI for testability reduces flakiness and improves reliability
-* Small, well-structured frameworks outperform large unstructured test suites
-
----
-
-## 👤 Author
+## Author
 
 Dustin Sison
 Software QA Engineer | Automation | Mobile & Web Testing
